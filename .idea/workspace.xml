@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670b3280-b24d-4323-b45e-0981d2690899" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jade.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lamport synchronisation method.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lamportMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +43,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
@@ -71,7 +75,9 @@
       <workItem from="1681361738433" duration="10000" />
       <workItem from="1681361758317" duration="3685000" />
       <workItem from="1681446315598" duration="6904000" />
-      <workItem from="1681455170046" duration="558000" />
+      <workItem from="1681455170046" duration="3357000" />
+      <workItem from="1681461269739" duration="2270000" />
+      <workItem from="1681465558362" duration="3624000" />
     </task>
     <servers />
   </component>
