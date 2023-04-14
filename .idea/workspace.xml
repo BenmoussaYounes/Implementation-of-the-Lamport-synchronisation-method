@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670b3280-b24d-4323-b45e-0981d2690899" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lamportMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Message.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentTwo.java" afterDir="false" />
@@ -77,7 +75,8 @@
       <workItem from="1681446315598" duration="6904000" />
       <workItem from="1681455170046" duration="3357000" />
       <workItem from="1681461269739" duration="2270000" />
-      <workItem from="1681465558362" duration="3624000" />
+      <workItem from="1681465558362" duration="3849000" />
+      <workItem from="1681477977945" duration="5235000" />
     </task>
     <servers />
   </component>

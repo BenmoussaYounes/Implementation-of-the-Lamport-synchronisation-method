@@ -7,10 +7,11 @@ import java.util.LinkedList;
 public class agentThree extends Agent {
     LinkedList<lamportMessage> Queue = new LinkedList<lamportMessage>();
     int ACK = 0;
-    lamportMessage REQ = new lamportMessage("REQ", 3, 3);
+    //lamportMessage REQ = new lamportMessage("REQ", 4, 3);
 
     public void setup() {
-        Queue.add(REQ);
+        System.out.println("Site 3 running ...");
+        // Queue.add(REQ);
         addBehaviour(new CyclicBehaviour() {
             @Override
             public void action() {
@@ -23,23 +24,29 @@ public class agentThree extends Agent {
                         case "ACK":
                             // Updating ACK
                             ACK += 1;
-                            System.out.println("Site 3 Ack number: " + ACK);
+                            System.out.println("Site 3 --> Received ACK number " + ACK + " from Site " + receivedLamportMessage.clock);
                             break;
                         case "REQ":
                             // Updating Queue
-                            lamportMessage.checkpriority(Queue, receivedLamportMessage);
+                            if (!Queue.isEmpty()) {
+                                lamportMessage.checkpriority(Queue, receivedLamportMessage);
+                            }
                             // Sending ACK
+                            System.out.println("Site 3 --> Received Site " + receivedLamportMessage.siteNumber + " req");
+                            receivedLamportMessage.clock = 3; // Using Clock Value to as an emitter site number
+                            System.out.println("ACK-Site3 --> ACK Sending");
                             send(receivedLamportMessage.sendACK());
                             break;
                         case "REL":
-                            if (receivedLamportMessage.siteNumber == Queue.getFirst().siteNumber) {
+                            System.out.println("Site 3 --> REL received rel From " + receivedLamportMessage.siteNumber);
+                            if (!Queue.isEmpty() && receivedLamportMessage.siteNumber == Queue.getFirst().siteNumber) {
                                 // Updating Queue
                                 Queue.removeFirst();
                             }
                             break;
                     }
                 } else {
-                    System.out.println("Site 3 Waiting ...");
+
                     this.block();
                 }
             }
