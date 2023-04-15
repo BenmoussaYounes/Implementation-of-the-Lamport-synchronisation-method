@@ -8,7 +8,7 @@ import java.util.Queue;
 public class agentThree extends Agent {
     LinkedList<lamportMessage> Queue = new LinkedList<lamportMessage>();
     int ACK = 0;
-    lamportMessage REQ = new lamportMessage("REQ", 1, 3);
+    lamportMessage REQ = new lamportMessage("REQ", 3, 3);
 
     public void setup() {
         System.out.println("Site 3 running ...");
@@ -51,6 +51,7 @@ public class agentThree extends Agent {
                             if (!Queue.isEmpty() && receivedLamportMessage.siteNumber == Queue.getFirst().siteNumber) {
                                 // Updating Queue
                                 Queue.removeFirst();
+                                ;
                             }
                             break;
                     }

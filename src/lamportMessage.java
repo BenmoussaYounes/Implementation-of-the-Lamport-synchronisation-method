@@ -2,6 +2,7 @@ import jade.core.AID;
 import jade.lang.acl.ACLMessage;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class lamportMessage {
     String messageType;
@@ -110,9 +111,18 @@ public class lamportMessage {
 
     static public LinkedList<lamportMessage> checkpriority(LinkedList<lamportMessage> Queue, lamportMessage newMessage) {
         // checking the Queue
-        if (Queue.getFirst() != null && newMessage.clock < Queue.getFirst().clock) {
+        int length = Queue.size();
+        if (Queue.getFirst() == null) {
+            Queue.addFirst(newMessage);
+        } else if (newMessage.clock < Queue.getFirst().clock) {
             Queue.addFirst(newMessage);
         } else {
+            for (int i = 0; i < length; i++) {
+                if (newMessage.clock < Queue.get(i).clock) {
+                    Queue.add(i, newMessage);
+                    return Queue;
+                }
+            }
             Queue.addLast(newMessage);
         }
         return Queue;

@@ -5,7 +5,7 @@ import jade.lang.acl.ACLMessage;
 import java.util.LinkedList;
 
 public class agentTwo extends Agent {
-    lamportMessage REQ = new lamportMessage("REQ", 3, 2);
+    lamportMessage REQ = new lamportMessage("REQ", 1, 2);
     int ACK = 0;
     LinkedList<lamportMessage> Queue = new LinkedList<lamportMessage>();
 

@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/src/agentOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lamportMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lamportMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +83,9 @@
       <workItem from="1681547215220" duration="1479000" />
       <workItem from="1681557091947" duration="599000" />
       <workItem from="1681559686595" duration="4381000" />
+      <workItem from="1681564125838" duration="153000" />
+      <workItem from="1681575321594" duration="2899000" />
+      <workItem from="1681582105280" duration="1482000" />
     </task>
     <servers />
   </component>
