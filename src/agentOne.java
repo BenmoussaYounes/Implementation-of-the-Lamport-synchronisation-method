@@ -1,3 +1,4 @@
+import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
@@ -18,7 +19,7 @@ import java.util.LinkedList;
 // remove = dequeue, poll()
 
 public class agentOne extends Agent {
-    lamportMessage REQ = new lamportMessage("REQ", 3, 1);
+    lamportMessage REQ = new lamportMessage("REQ", 2, 1);
     int ACK = 0;
     LinkedList<lamportMessage> Queue = new LinkedList<lamportMessage>();
 
@@ -48,19 +49,22 @@ public class agentOne extends Agent {
                             System.out.println("Site 1 --> Received ACK number " + ACK + " from Site " + receivedLamportMessage.clock);
                             if (ACK == 2) {
                                 System.out.println(" ! Site1 --> Trying to access Critical Section ...");
+                                if (Queue.getFirst().siteNumber != 1) {
+                                    System.out.println(" ! Site1 --> Access Denied, Site " + Queue.getFirst().siteNumber + " is on the peek of the list");
+                                }
                             }
                             break;
                         case "REQ":
                             // Updating Queue
                             lamportMessage.checkpriority(Queue, receivedLamportMessage);
-                            System.out.println("Site1 --> REQ Received Site " + receivedLamportMessage.siteNumber + " req");
+                            System.out.println("Site 1 --> Received Site " + receivedLamportMessage.siteNumber + " REQ");
                             // Sending ACK
                             receivedLamportMessage.clock = 1; // Using Clock Value to as an emitter site number
                             System.out.println("ACK-Site1 --> ACK Sending");
                             send(receivedLamportMessage.sendACK());
                             break;
                         case "REL":
-                            System.out.println("Site1 --> REL received rel From " + receivedLamportMessage.siteNumber);
+                            System.out.println("Site 1 --> received REL From " + receivedLamportMessage.siteNumber);
                             if (receivedLamportMessage.siteNumber == Queue.getFirst().siteNumber) {
                                 // Updating Queue
                                 Queue.removeFirst();
@@ -83,6 +87,7 @@ public class agentOne extends Agent {
                     System.out.println("-----------------------------------");
                     System.out.println("Site 1 Consuming Critical Section");
                     System.out.println("-----------------------------------");
+                    this.block(3000);
                     //Updating Queue
                     ACLMessage[] rel = Queue.getFirst().sendREL();
                     Queue.removeFirst();
