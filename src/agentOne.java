@@ -1,10 +1,8 @@
-import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
 
 import java.util.LinkedList;
-import java.util.Queue;
 
 
 /**
@@ -59,10 +57,8 @@ public class agentOne extends Agent {
                             // Updating Queue
                             System.out.println("Site 1 --> Received Site " + receivedLamportMessage.siteNumber + " REQ");
                             lamportMessage.checkpriority(Queue, receivedLamportMessage);
-                            System.out.println("SITE 1 TOP ON THE QUEUE" + Queue.getFirst().siteNumber);
-                            System.out.println("SITE 1 DOWN ON THE QUEUE" + Queue.getLast().siteNumber);
                             // Sending ACK
-                            receivedLamportMessage.clock = 1; // Using Clock Value to as an emitter site number
+                            receivedLamportMessage.clock = 1; // Using Clock Value as an emitter site number
                             System.out.println("ACK-Site1 --> ACK Sending");
                             send(receivedLamportMessage.sendACK());
                             break;

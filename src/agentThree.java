@@ -42,7 +42,7 @@ public class agentThree extends Agent {
                             lamportMessage.checkpriority(Queue, receivedLamportMessage);
                             // Sending ACK
                             System.out.println("Site 3 --> Received Site " + receivedLamportMessage.siteNumber + " req");
-                            receivedLamportMessage.clock = 3; // Using Clock Value to as an emitter site number
+                            receivedLamportMessage.clock = 3; // Using Clock Value as an emitter site number
                             System.out.println("ACK-Site3 --> ACK Sending");
                             send(receivedLamportMessage.sendACK());
                             break;

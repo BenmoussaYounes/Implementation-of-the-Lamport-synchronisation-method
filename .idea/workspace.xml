@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670b3280-b24d-4323-b45e-0981d2690899" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lamportMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lamportMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +88,14 @@
       <workItem from="1681564125838" duration="153000" />
       <workItem from="1681575321594" duration="2899000" />
       <workItem from="1681582105280" duration="1482000" />
+      <workItem from="1681585120475" duration="166000" />
+      <workItem from="1681927108006" duration="1155000" />
+      <workItem from="1682011585665" duration="3011000" />
+      <workItem from="1682142830185" duration="5892000" />
+      <workItem from="1682492302253" duration="202000" />
+      <workItem from="1682504109428" duration="81000" />
+      <workItem from="1682512597650" duration="814000" />
+      <workItem from="1682621072863" duration="215000" />
     </task>
     <servers />
   </component>

@@ -44,7 +44,7 @@ public class agentTwo extends Agent {
                             System.out.println("Site 2 --> Received Site " + receivedLamportMessage.siteNumber + " REQ");
                             lamportMessage.checkpriority(Queue, receivedLamportMessage);
                             // Sending ACK
-                            receivedLamportMessage.clock = 2; // Using Clock Value to as an emitter site number
+                            receivedLamportMessage.clock = 2; // Using Clock Value as an emitter site number
                             System.out.println("ACK-Site2 --> ACK Sending");
                             send(receivedLamportMessage.sendACK());
                             break;
